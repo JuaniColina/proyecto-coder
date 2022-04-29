@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas Online</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        
+        <img class="logo__header" src="../imagenes/logo iroka.jpg" controls width="200" height="200" alt="logo iroka">
+         <nav class="barra__navegacion">
+             <ul class="flex__barra">
+               <li><a class="elementos__nav" href="../index.html">Inicio</a></li> 
+               <li><a class="elementos__nav" href="Servicios.html">Servicios</a></li>    
+               <li><a class="elementos__nav" href="/paginas/Reservas online.html">Reservas online</a></li>
+               <li><a class="elementos__nav" href="Contacto.html">Contacto</a></li>
+               <li><a class="elementos__nav" href="Faq.html">Faq</a></li>
+             </ul>
+
+        </nav>
+    </header> 
+    <main class="main__reservas">
+        
+        <div class="main__textoreservas">
+            <div>
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nomnbre">
+            </div>
+            <div>
+             <label for="Apellido">Apellido</label>
+             <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su apellido">
+            </div>
+            <div>
+                <label for="Telefono">Telefono</label>
+            <input type="number" id="Telefono" name="Telefono" placeholder="Telefono">
+            </div>
+            <div>
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario" cols="20" rows="1"></textarea> 
+            </div>
+            <div>
+                <label for="Consulta">Cual es su consulta</label>
+                <select name="Consulta" id="Consulta">
+                    <option value="Diagnostico">Diagnositco</option>
+                    <option value="Eliminacion de caries">Eliminacion de caries</option>
+                    <option value="Limpieza de sarrio">Limpieza de sarro</option> 
+                    <option value="Profilaxis">Profilaxis</option> 
+                    <option value="Blanqueamientos">Blanquemientos</option> 
+                    <option value="Sellantes">Sellantes</option> 
+                    <option value="Fluortopicacion">Fluortopicacion</option> 
+                    <option value="Protesis">Protesis</option> 
+                    <option value="Endodoncias">Endodoncias</option> 
+                    <option value="Raspado y alisado">Raspado y alisado</option> 
+                    <option value="Restauraciones indirectas">Restauraciones indirectas</option> 
+                    <option value="Exodoncia simple">Exodoncia simple</option> 
+                
+            </div>
+    </main>
+    
+    <footer class="footer"> 
+        <img class="logo__footer" src="../imagenes/logo iroka.jpg" controls width="200" height="200" alt="logo iroka">
+        <span>
+            <p class="footer__parrafo">Acceda a beneficios</p>
+        </span>
+    
+        <div class="correo">
+            <label for="correo">Email</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingresar su correo">
+            <button class="boton__footer"> Enviar</button>
+        </div>
+        
+    
+       
+    </footer>
+
+</body>
+</html>
