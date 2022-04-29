@@ -229,14 +229,16 @@ font-size: 40px;
 .texto {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     font-size: 30px;
     padding-top: 2rem;
     gap: 5rem;
 }
+.iframe {
+    padding-top: 5rem;
+}
 .titulo__servicios {
     text-align: center;
-    padding-left: 40rem;
+    padding-left: 45rem;
     font-size: 40px;
 }
 .logo__instagram {
