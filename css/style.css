@@ -11,7 +11,6 @@ body {
 
 .header {
     background-color: pink;
-    border-top: 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -94,7 +93,7 @@ font-size: 40px;
 }
 
 .grid {
-    border: 2px solid black;
+    border: solid black;
     height: 600px;
     width: 900px;
     margin-left: 8rem;
@@ -112,61 +111,110 @@ font-size: 40px;
     color: white;
     text-align: center;
 }
+.grid__hijo1 img {
+    width: 100%;
+    height: 100%;
+}
 .grid__hijo2 {
     border: 2px solid black;
     color: white;
     text-align: center;
+}
+.grid__hijo2 img {
+    width: 100%;
+    height: 100%;
 }
 .grid__hijo3 {
     border: 2px solid black;
     color: white;
     text-align: center;
 }
+.grid__hijo3 img {
+    width: 100%;
+    height: 100%;
+}
 .grid__hijo4 {
     border: 2px solid black;
     color: white;
     text-align: center;
+}
+.grid__hijo4 img {
+    width: 100%;
+    height: 100%;
 }
 .grid__hijo5 {
     border: 2px solid black;
     color: white;
     text-align: center;
 }
+.grid__hijo5 img {
+    width: 100%;
+    height: 100%;
+}
 .grid__hijo6 {
     border: 2px solid black;
     color: white;
     text-align: center;
+}
+.grid__hijo6 img {
+    width: 100%;
+    height: 100%;
 }
 .grid__hijo7 {
     border: 2px solid black;
     color: white;
     text-align: center;
 }
+.grid__hijo7 img {
+    width: 100%;
+    height: 100%;
+}
 .grid__hijo8 {
     border: 2px solid black;
     color: white;
     text-align: center;
+}
+.grid__hijo8 img {
+    width: 100%;
+    height: 100%;
 }
 .grid__hijo9 {
     border: 2px solid black;
     color: white;
     text-align: center;
 }
+.grid__hijo9 img {
+    width: 100%;
+    height: 100%;
+}
 .grid__hijo10 {
     border: 2px solid black;
     color: white;
     text-align: center;
+}
+.grid__hijo10 img {
+    width: 100%;
+    height: 100%;
 }
 .grid__hijo11 {
     border: 2px solid black;
     color: white;
     text-align: center;
 }
+.grid__hijo11 img {
+    width: 100%;
+    height: 100%;
+}
 .grid__hijo12 {
     border: 2px solid black;
     color: white;
     text-align: center;
 }
+.grid__hijo12 img {
+    width: 100%;
+    height: 100%;
+}
+
 .main__servicios {
     background-color: rgb(158, 155, 155);
     height: 100%;
@@ -212,8 +260,8 @@ font-size: 40px;
     gap: 3rem;
     font-size: 20px;
     padding: 6rem 8rem 5rem 9rem;
-
 }
+
 .footer__servicios {
         background-color: pink;
         width: 100%;
@@ -234,7 +282,7 @@ font-size: 40px;
     gap: 5rem;
 }
 .iframe {
-    padding-top: 5rem;
+    padding-top: 7rem;
 }
 .titulo__servicios {
     text-align: center;
@@ -286,4 +334,160 @@ font-size: 40px;
 }
 .boton__faq {
     padding: 0.5rem;
+}
+.icono__movil {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+        display: block;
+        background-color: pink;
+    }
+
+    .logo__header {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+       margin-left: 25rem;
+    }
+    .flex__barra {
+        margin-left: 13rem;
+    }
+    .main {
+        display: block;
+        background-image:linear-gradient(to bottom, pink, grey);
+    }
+    .titulo {
+        font-size: 50px;
+    }
+    .subtitulo {
+        font-size: 30px;
+    }
+    .main__texto {
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .grid {
+        border: solid black;
+        height: 450px;
+        width: 650px;
+        margin-left: 6rem;
+        display: grid;
+        grid-template-columns: 162.5px 162.5px 162.5px 162.5px;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-areas: 
+    "ele1 ele2 ele3 ele4"
+    "ele5 ele6 ele7 ele8"
+    "ele9 ele10 ele11 ele12"
+    }
+    .titulo__servicios {
+        font-size: 40px;
+        padding-right: 10rem;
+        padding-top: 6px;
+    }
+    .grid__servicios {
+        border: solid black;
+        height: 450px;
+        width: 650px;
+        margin-left: 6rem;
+        display: grid;
+        grid-template-columns: 162.5px 162.5px 162.5px 162.5px;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-areas: 
+    "ele1 ele2 ele3 ele4"
+    "ele5 ele6 ele7 ele8"
+    "ele9 ele10 ele11 ele12"
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        background-color: pink;
+
+    }
+    .barra__navegacion {
+        display: none;
+    }
+    .logo__header{
+        width: 8rem;
+        height: 8rem;
+        margin-left: 1rem;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .subtitulo {
+        font-size: 20px;
+    }
+    .parrafo__4 {
+        font-size: 20px;
+    }
+    .grid {
+        border: solid black;
+        height: 220px;
+        width: 350px;
+        margin-left: 2rem;
+        display: grid;
+        grid-template-columns: 87.5px 87.5px 87.5px 87.5px;
+    grid-template-rows: 73.3px 73.3px 73.3px;
+    grid-template-areas: 
+    "ele1 ele2 ele3 ele4"
+    "ele5 ele6 ele7 ele8"
+    "ele9 ele10 ele11 ele12"
+
+    }
+    .icono__movil {
+        display: block;
+        margin-right: 4rem;
+        font-size: 50px;
+        text-decoration: none;
+        color: black;
+    }
+    #lateral {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 50%;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        transition: left 2s;
+    }
+    #lateral:target {
+        left: 0%;
+    }
+    .flex__barra {
+        flex-direction: column;
+       margin-left: 15px;
+    }
+    .elementos__nav {
+        color: white;
+    }
+    .grid__servicios {
+        border: solid black;
+        height: 350px;
+        width: 480px;
+        margin-left: 2rem;
+        display: grid;
+        grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 116.6px 116.6px 116.6px;
+    grid-template-areas: 
+    "ele1 ele2 ele3 ele4"
+    "ele5 ele6 ele7 ele8"
+    "ele9 ele10 ele11 ele12"
+    }
+    .main__servicios {
+        background-image:linear-gradient(to bottom, pink, grey);
+        padding-left: 5rem;
+    }
+    .titulo__servicios {
+        font-size: 40px;
+        padding-right: 11rem;
+    }
 }
