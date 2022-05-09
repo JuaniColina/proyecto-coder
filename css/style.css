@@ -341,21 +341,21 @@ font-size: 40px;
 
 @media screen and (max-width: 1023px) {
     .header {
-        display: block;
+        display:flex;
+        flex-direction: column;
         background-color: pink;
+        justify-content: center;
     }
 
-    .logo__header {
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-       margin-left: 25rem;
-    }
     .flex__barra {
-        margin-left: 13rem;
+        margin-left: 1rem;
     }
+    
     .main {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-image:linear-gradient(to bottom, pink, grey);
     }
     .titulo {
@@ -370,35 +370,27 @@ font-size: 40px;
     }
     
     .grid {
-        border: solid black;
-        height: 450px;
-        width: 650px;
-        margin-left: 6rem;
+        height: 600px;
+        width: 400px;
+        margin-right: 6rem;
         display: grid;
-        grid-template-columns: 162.5px 162.5px 162.5px 162.5px;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-areas: 
-    "ele1 ele2 ele3 ele4"
-    "ele5 ele6 ele7 ele8"
-    "ele9 ele10 ele11 ele12"
+        grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     }
     .titulo__servicios {
         font-size: 40px;
         padding-right: 10rem;
         padding-top: 6px;
     }
+
     .grid__servicios {
         border: solid black;
-        height: 450px;
-        width: 650px;
-        margin-left: 6rem;
+        height: 600px;
+        width: 400px;
+        padding-right: 3rem;
         display: grid;
-        grid-template-columns: 162.5px 162.5px 162.5px 162.5px;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-areas: 
-    "ele1 ele2 ele3 ele4"
-    "ele5 ele6 ele7 ele8"
-    "ele9 ele10 ele11 ele12"
+        grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     }
 
 }
@@ -429,17 +421,12 @@ font-size: 40px;
     }
     .grid {
         border: solid black;
-        height: 220px;
-        width: 350px;
-        margin-left: 2rem;
+        height: 300px;
+        width: 200px;
+        margin-left: 6rem;
         display: grid;
-        grid-template-columns: 87.5px 87.5px 87.5px 87.5px;
-    grid-template-rows: 73.3px 73.3px 73.3px;
-    grid-template-areas: 
-    "ele1 ele2 ele3 ele4"
-    "ele5 ele6 ele7 ele8"
-    "ele9 ele10 ele11 ele12"
-
+        grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px;
     }
     .icono__movil {
         display: block;
@@ -471,23 +458,20 @@ font-size: 40px;
     }
     .grid__servicios {
         border: solid black;
-        height: 350px;
-        width: 480px;
-        margin-left: 2rem;
+        height: 450px;
+        width: 260px;
+        margin-left: 3rem;
         display: grid;
-        grid-template-columns: 120px 120px 120px 120px;
-    grid-template-rows: 116.6px 116.6px 116.6px;
-    grid-template-areas: 
-    "ele1 ele2 ele3 ele4"
-    "ele5 ele6 ele7 ele8"
-    "ele9 ele10 ele11 ele12"
+        grid-template-columns: 130px 130px;
+    grid-template-rows: 150px 150px 150px;
     }
     .main__servicios {
         background-image:linear-gradient(to bottom, pink, grey);
         padding-left: 5rem;
     }
     .titulo__servicios {
-        font-size: 40px;
+        font-size: 27px;
         padding-right: 11rem;
     }
+   
 }
