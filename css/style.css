@@ -41,20 +41,18 @@ body {
     background-image:linear-gradient(to bottom, pink, grey);
     background-size: cover;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 5rem;
     min-height: 600px;
-    padding: 5rem;
+    padding: 4rem;
 }
 .main__texto {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
 
 }
 .titulo {
-font-size: 60px;
+font-size: 50px;
+padding-left: 10px;
 }
 .subtitulo {
 font-size: 40px;
@@ -63,8 +61,7 @@ font-size: 40px;
     font-size: 30px;
 }
 .boton{
-    padding: 1rem;
-    margin: 3rem;
+    padding: 8px;
 }
 .footer {
     background-color: grey;
@@ -225,12 +222,9 @@ font-size: 40px;
     min-height: 700px;
     padding-right: 9rem;
 }
-.titulo__servicios{
-    text-decoration: none;
-    margin-right: 30rem;
-    margin-top: 2px;
-    font-size: 20px;
-    text-align: center;
+
+.titulo2 {
+    font-size: 40px;
 }
 .grid__servicios{
     border: 2px solid black;
