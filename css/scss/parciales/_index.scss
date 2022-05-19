@@ -1,0 +1,88 @@
+.header {
+    background-color: pink;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .&__header {
+        border-radius: 50px;
+        width: 10rem;
+        height: 10rem;
+        margin: 1rem;
+    }
+}
+.barra__navegacion {
+    margin: 0 1rem;
+    color: white;
+    
+    .flex__barra {
+        font-size: 25px;
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        margin-right: 32px;
+    }
+    
+    .elementos__nav {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+.main {
+    background-image:linear-gradient(to bottom, pink, grey);
+    background-size: cover;
+    height: 100%;
+    min-height: 600px;
+    padding: 4rem;
+   
+    .&__texto {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    
+    }
+    .titulo {
+    font-size: 50px;
+    padding-left: 10px;
+    }
+    .subtitulo {
+    font-size: 40px;
+    }
+    .parrafo__4 {
+        font-size: 30px;
+    }
+    .boton{
+        padding: 8px;
+    }
+}
+
+.footer {
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .&__parrafo {
+        text-align: center;
+        font-size: 38px;
+    }
+    .logo__footer {
+        border-radius: 50px;
+        width: 8rem;
+        height: 8rem;
+        margin: 1rem;
+    }
+    .correo{
+        margin-right: 40px;
+        padding: 0.5rem;
+    }
+    .boton__footer {
+        padding: 0.5rem;
+    }
+}

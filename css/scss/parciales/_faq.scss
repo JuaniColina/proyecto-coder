@@ -1,0 +1,41 @@
+.main__faq {
+    background-image:linear-gradient(to bottom, pink, grey);
+    height: 100%;
+    min-height: 600px;
+}
+.texto__faq {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.titulo__faq {
+    font-size: 56px;
+}
+.parrafo__1 {
+    font-size: 30px;
+}
+.parrafo__2 {
+    font-size: 30px;
+}
+.parrafo__3 {
+    font-size: 30px;
+}
+.consulta {
+    font-size: 30px;
+}
+.consulta__tamaño {
+    padding: 1rem;
+}
+.logo__faq {
+    height: 33rem;
+    width: 33rem;
+    padding-top: 2rem;
+}
+
+.boton__faq {
+    padding: 0.5rem;
+}
+.icono__movil {
+    display: none;
+}

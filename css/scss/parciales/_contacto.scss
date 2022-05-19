@@ -1,0 +1,19 @@
+.main__contacto {
+    background-color: rgb(158, 155, 155);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding-top: 2rem;
+    gap: 5rem;
+}
+
+.iframe {
+    padding-top: 7rem;
+    padding-left: 12rem;
+}

@@ -1,0 +1,19 @@
+
+.main__reservas {
+    background-image:linear-gradient(to bottom, pink, grey);
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        min-height: 580px;
+       
+}
+.main__textoreservas{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 20px;
+    padding-top: 5rem; 
+}
+.carrusel {
+    padding-top: 5rem;
+}
