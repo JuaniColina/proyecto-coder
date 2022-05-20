@@ -1,0 +1,476 @@
+/* No CSS *//*# sourceMappingURL=estilos.css.map */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.header {
+    background-color: pink;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__header {
+    border-radius: 50px;
+    width: 13rem;
+    height: 13rem;
+    margin: 1rem;
+}
+.barra__navegacion {
+    margin: 0 1rem;
+    color: white;
+}
+
+.flex__barra {
+    font-size: 25px;
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-right: 32px;
+}
+.elementos__nav {
+    text-decoration: none;
+    color: black;
+}
+.main {
+    background-image:linear-gradient(to bottom, pink, grey);
+    background-size: cover;
+    height: 100%;
+    min-height: 600px;
+    padding: 4rem;
+}
+.main__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+.titulo {
+font-size: 50px;
+padding-left: 10px;
+}
+.subtitulo {
+font-size: 40px;
+}
+.parrafo__4 {
+    font-size: 30px;
+}
+.boton{
+    padding: 8px;
+}
+.footer {
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__parrafo {
+    text-align: center;
+    font-size: 38px;
+}
+.logo__footer {
+    border-radius: 50px;
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+}
+.correo{
+    margin-right: 40px;
+    padding: 0.5rem;
+}
+.boton__footer {
+    padding: 0.5rem;
+}
+
+.grid {
+    border: solid black;
+    height: 600px;
+    width: 900px;
+    margin-left: 8rem;
+    display: grid;
+    grid-template-columns: 225px 225px 225px 225px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "ele1 ele2 ele3 ele4"
+    "ele5 ele6 ele7 ele8"
+    "ele9 ele10 ele11 ele12"
+
+}
+.grid__hijo1 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo1 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo2 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo2 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo3 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo3 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo4 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo4 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo5 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo5 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo6 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo6 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo7 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo7 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo8 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo8 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo9 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo9 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo10 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo10 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo11 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo11 img {
+    width: 100%;
+    height: 100%;
+}
+.grid__hijo12 {
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+}
+.grid__hijo12 img {
+    width: 100%;
+    height: 100%;
+}
+
+.main__servicios {
+    background-color: rgb(158, 155, 155);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    padding-right: 9rem;
+}
+
+.titulo2 {
+    font-size: 60px;
+}
+.texto__servicios {
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+.main__reservas {
+    background-image:linear-gradient(to bottom, pink, grey);
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        min-height: 580px;
+       
+}
+.main__textoreservas{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 20px;
+    padding-top: 5rem; 
+}
+.carrusel {
+    padding-top: 5rem;
+}
+
+.footer__servicios {
+        background-color: pink;
+        width: 100%;
+           
+}
+.main__contacto {
+    background-color: rgb(158, 155, 155);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 600px;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding-top: 2rem;
+    gap: 5rem;
+}
+.logofb {
+    width: 2rem;
+    height: 2rem;
+}
+.iframe {
+    padding-top: 7rem;
+    padding-left: 12rem;
+}
+.titulo__servicios {
+    font-size: 40px;
+}
+
+.main__faq {
+    background-image:linear-gradient(to bottom, pink, grey);
+    height: 100%;
+    min-height: 600px;
+}
+.texto__faq {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.titulo__faq {
+    font-size: 56px;
+}
+.parrafo__1 {
+    font-size: 30px;
+}
+.parrafo__2 {
+    font-size: 30px;
+}
+.parrafo__3 {
+    font-size: 30px;
+}
+.consulta {
+    font-size: 30px;
+}
+.consulta__tamaño {
+    padding: 1rem;
+}
+.logo__faq {
+    height: 33rem;
+    width: 33rem;
+    padding-top: 2rem;
+}
+
+.boton__faq {
+    padding: 0.5rem;
+}
+.icono__movil {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+        display:flex;
+        flex-direction: column;
+        background-color: pink;
+        justify-content: center;
+    }
+
+    .flex__barra {
+        margin-left: 1rem;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image:linear-gradient(to bottom, pink, grey);
+    }
+    .titulo {
+        font-size: 50px;
+    }
+    .subtitulo {
+        font-size: 30px;
+    }
+    .main__texto {
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .grid {
+        height: 600px;
+        width: 400px;
+        margin-right: 6rem;
+        display: grid;
+        grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    }
+    .titulo__servicios {
+        font-size: 40px;
+        padding-right: 10rem;
+        padding-top: 6px;
+    }
+
+    .grid__servicios {
+        border: solid black;
+        height: 600px;
+        width: 400px;
+        padding-right: 3rem;
+        display: grid;
+        grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    }
+    .iframe {
+        display: none;
+    }
+    .logo__faq {
+        width: 22rem;
+        height: 22rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        background-color: pink;
+
+    }
+    .barra__navegacion {
+        display: none;
+    }
+    .logo__header{
+        width: 8rem;
+        height: 8rem;
+        margin-left: 1rem;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .subtitulo {
+        font-size: 20px;
+    }
+    .parrafo__4 {
+        font-size: 20px;
+    }
+    .grid {
+        border: solid black;
+        height: 300px;
+        width: 200px;
+        margin-left: 6rem;
+        display: grid;
+        grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    }
+    .icono__movil {
+        display: block;
+        margin-right: 4rem;
+        font-size: 50px;
+        text-decoration: none;
+        color: black;
+    }
+    #lateral {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 50%;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        transition: left 2s;
+    }
+    #lateral:target {
+        left: 0%;
+    }
+    .flex__barra {
+        flex-direction: column;
+       margin-left: 15px;
+    }
+    .elementos__nav {
+        color: white;
+    }
+    .titulo2 {
+        font-size: 40px;
+    }
+    .texto__servicios {
+        font-size: 10px;
+    }
+    .main__servicios {
+        background-image:linear-gradient(to bottom, pink, grey);
+        padding-left: 5rem;
+    }
+    .titulo__servicios {
+        font-size: 27px;
+        padding-right: 11rem;
+    }
+   .iframe {
+      display: none;
+   }
+   .titulo__faq {
+       font-size: 38px;
+   }
+   .logo__faq {
+       width: 15rem;
+       height: 15rem;
+       padding-right: 3rem;
+   }
+}
