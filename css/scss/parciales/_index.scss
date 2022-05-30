@@ -5,10 +5,10 @@
     justify-content: space-between;
     align-items: center;
     
-    .&__header {
+    .logo__header {
         border-radius: 50px;
-        width: 13rem;
-        height: 13rem;
+        width: 12rem;
+        height: 12rem;
         margin: 1rem;
     }
 }
@@ -39,7 +39,7 @@
     min-height: 600px;
     padding: 4rem;
    
-    .&__texto {
+    &__texto {
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -68,7 +68,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .&__parrafo {
+    &__parrafo {
         text-align: center;
         font-size: 38px;
     }
@@ -85,4 +85,14 @@
     .boton__footer {
         padding: 0.5rem;
     }
+}
+@mixin generarFlex ($direction, $ejePrincipal, $ejeSecundario) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $ejePrincipal;
+    align-items: $ejeSecundario;
+}
+
+.main__texto {
+    @include generarFlex(column,center ,center )
 }

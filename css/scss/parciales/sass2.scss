@@ -1,0 +1,13 @@
+.logo__header {
+    border-radius: 50px;
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem;
+}
+.logo__footer {
+    @extend .logo__header
+    border-radius: 50px;
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+  }

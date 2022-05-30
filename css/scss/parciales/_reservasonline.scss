@@ -17,3 +17,10 @@
 .carrusel {
     padding-top: 5rem;
 }
+@mixin generarFlex ($direction, $ejePrincipal, $ejeSecundario) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $ejePrincipal;
+    align-items: $ejeSecundario;
+}
+@include generarFlex(row,center ,center )

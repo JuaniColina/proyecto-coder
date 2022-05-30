@@ -16,3 +16,12 @@
     font-size: 20px;
     padding-top: 1rem;
 }
+@mixin generarFlex ($direction, $ejePrincipal, $ejeSecundario) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $ejePrincipal;
+    align-items: $ejeSecundario;
+}
+.main__servicios {
+    @include generarFlex(column,center ,center )
+}
