@@ -42,6 +42,9 @@ body {
   color: black;
 }
 
+.elementos__navx {
+  display: none;
+}
 .main {
   background-image: linear-gradient(to bottom, pink, grey);
   background-size: cover;
@@ -136,6 +139,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.imagen1 {
+  width: 400px;
+  height: 400px;
+}
 
 .main__reservas {
   background-image: linear-gradient(to bottom, pink, grey);
@@ -151,6 +158,10 @@ body {
   gap: 3rem;
   font-size: 20px;
   padding-top: 5rem;
+}
+.boton__reservas {
+  margin-left: 8rem ;
+  margin-top: 2rem;
 }
 
 .carrusel {
@@ -297,6 +308,12 @@ body {
     display: none;
     color: white;
   }
+  .elementos__navx {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  
   .logo__header {
     width: 8rem;
     height: 8rem;
@@ -352,7 +369,12 @@ body {
     font-size: 40px;
   }
   .texto__servicios {
-    font-size: 10px;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .imagen1{
+    width: 100px;
+    height: 100px;
   }
   .main__servicios {
     background-image: linear-gradient(to bottom, pink, grey);
@@ -362,8 +384,17 @@ body {
     font-size: 27px;
     padding-right: 11rem;
   }
+  
   .iframe {
     display: none;
+  }
+  .boton__reservas {
+    margin-left: 6rem;
+  }
+  .correo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
   }
   .titulo__faq {
     font-size: 38px;
