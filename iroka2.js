@@ -11,3 +11,11 @@ num2 = parseInt (prompt ("Caries $1000, Blanqueamiento $3000 \n Raspado y Alisad
     }
 let resultado = suma(num1, num2)
 alert ("El costo de su consulta es de $" + resultado);
+
+
+function Persona(nombre, edad, consulta) {
+    this.nombre = (prompt ("Ingrese su nombre"));
+    this.edad = (prompt ("Ingrese su edad"));
+    this.consulta = (prompt ("Cual es su consulta"));
+}
+const Persona1 = new Persona (nombre, edad, consulta); 
