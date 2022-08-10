@@ -1,7 +1,7 @@
 let carrito = [];
 let opcion;
 
-
+const items = document.getElementById ("items")
 
 
 function agregarItemHTML(item) {
@@ -10,8 +10,21 @@ function agregarItemHTML(item) {
                     <th>${item.cantidad}</th>
                     <th>${item.precio}</th>`
                     
- tabla.append(row);
+ items.append(row);
 }
+
+function Productos(Tratamiento, Precio){
+    this.Tratamiento = Tratamiento;
+    this.Precio = Precio;
+    this.cantidad = 1
+}
+
+const Tratamiento = prompt ("Ingrese tratamiento a realizarse");
+const Precio = parseInt(prompt ("Ingrese el monto asignaod a su consulta"));
+
+const producto = new Productos (Tratamiento, Precio);
+carrito.push(producto);
+
 
 function checkout() {
     return carrito.reduce(
@@ -27,7 +40,7 @@ function mostrarCarrito(carrito) {
 }
 mostrarCarrito(carrito);
 do {
-    opcion =(prompt(
+    opcion = parseInt(prompt(
         "Elija la opcion deseada\n1- Checkout\n2- Exit"
     ));
     switch (opcion) {
@@ -35,6 +48,7 @@ do {
             let total = checkout();
             alert("El precio total de su compra es: " + total);
             document.getElementById("total").innerText = `El total es ${total}`;
+            break;
     case 2:
             alert("Adios!");
             break;
@@ -47,13 +61,3 @@ do {
 carrito.forEach((item) => {
     agregarItemHTML(item);
 });
-
-
-
-
-
-let boton = document.getElementById("boton");
-
-boton.addEventListener("click" , ()=>{
-    alert("Su mensaje fue enviado")
-})
