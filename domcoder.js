@@ -28,7 +28,7 @@ carrito.push(producto);
 
 function checkout() {
     return carrito.reduce(
-        (total, item) => total + item.precio * item.cantidad,
+        (total, item) => total + item.Precio * item.cantidad,
         0
     );
 }
@@ -46,14 +46,14 @@ do {
     switch (opcion) {
     case 1:
             let total = checkout();
-            alert("El precio total de su compra es: " + total);
+            console.log("El precio total de su compra es: " + total);
             document.getElementById("total").innerText = `El total es ${total}`;
             break;
     case 2:
-            alert("Adios!");
+            console.log("Adios!");
             break;
         default:
-            alert("Opcion incorrecta");
+            console.log("Opcion incorrecta");
             break;
     }
 }while (opcion != 1 && opcion != 2);

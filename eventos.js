@@ -23,3 +23,6 @@ reservar.onclick = (e)=>{
     );
     
 };
+
+const reservas1 = [...reservas]
+console.log(reservas1)
