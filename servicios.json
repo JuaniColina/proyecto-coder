@@ -1,0 +1,50 @@
+[
+    {
+        "nombre": "Diagnostico",
+        "precio": 0
+    },
+    {
+        "nombre": "Elimincacion de caries",
+        "precio": 500
+    },
+    {
+        "nombre": "Limpieza de sarro",
+        "precio": 900
+    },
+    {
+        "nombre": "Profilaxis",
+        "precio": 1000
+    },
+    {
+        "nombre": "Blanqueamientos",
+        "precio": 2500
+    },
+    {
+        "nombre": "Sellantes",
+        "precio": 700
+    },
+    {
+        "nombre": "Fluortopicacion",
+        "precio": 1000
+    },
+    {
+        "nombre": "Protesis",
+        "precio": 600
+    },
+    {
+        "nombre": "Endodoncias",
+        "precio": 800
+    },
+    {
+        "nombre": "Raspado y alisado ",
+        "precio": 900
+    },
+    {
+        "nombre": "Restauraciones indirectas",
+        "precio": 750
+    },
+    {
+        "nombre": "Exodoncia simple",
+        "precio": 900
+    }
+]

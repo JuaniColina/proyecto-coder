@@ -1,6 +1,11 @@
 let tratamientos = []
-
+const arrlocalstorage = JSON.parse(localStorage.getItem("tratamientos"))
 const items = document.getElementById("items")
+if (arrlocalstorage){
+    tratamientos = arrlocalstorage
+    rellenarTabla()
+}
+
 
 
 function agregarItemHTML(item) {
@@ -29,6 +34,7 @@ confirmar.onclick = (e) => {
     tratamientos.push(
         new Consulta(arrSelect[0], arrSelect[1])
     );
+    localStorage.setItem("tratamientos", JSON.stringify(tratamientos))
     rellenarTabla();
 };
 
@@ -46,5 +52,22 @@ function rellenarTabla(){
         
         items.appendChild(tr);
     });
+
+}
+async function rellenarSelect(){
+
+    const select = document.getElementById('Tratamientos');
+
+    const call = await fetch('/servicios.json');
+    const resp = await call.json();
+
+    resp.forEach( (tratamiento) => {
+        const texto = `${tratamiento.nombre} - ${tratamiento.precio}`;
+        const opt = document.createElement('option');
+        opt.value = texto;
+        opt.textContent = texto;
+        select.appendChild(opt);
+    });
+    
 
 }
