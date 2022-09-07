@@ -41,11 +41,50 @@ let {paciente1, paciente2} = objeto
 
 
 const button = document.querySelector('#reservar')
+
 button.addEventListener('click', () =>{
+   
+  const nombre = document.querySelector("#Nombre");
+  const apellido = document.querySelector("#Apellido");
+  const telefono = document.querySelector("#telefono");
+  const comentario = document.querySelector("#comentario");
+  const consulta = document.querySelector("#Consulta");
+
+  const arrValidaciones = [nombre, apellido, telefono, comentario, consulta];
+  let esValido = true;
+  const validar = [];
+
+  arrValidaciones.forEach(elemento => {
+    if(!elemento.value){
+      esValido.push(elemento.id);
+    }
+  })
+
+  if(!esValido){
     Swal.fire({
-        tittle: "Genial!",
-        text:"Su reserva se agendo correctamente",
-        icon:"success",
-        confirmButton: "Continuar"
+      tittle: "ERROR!",
+      text:`Falta completar los siguientes campos: ${camposFaltantes(validar)}`,
+      icon: "warning",
+      confirmButton: "Continuar"
+    })
+  }else{
+    Swal.fire({
+      tittle: "Genial!",
+      text:"Su reserva se agendo correctamente",
+      icon:"success",
+      confirmButton: "Continuar"
     })  
-})
+  }
+ 
+ })
+function camposFaltantes(arr = []){
+
+  let msg = ``;
+
+  arr.forEach(elemento => {
+    msg += elemento.toUpperCase() + " "
+  
+  })
+
+  return msg;
+}
